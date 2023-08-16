@@ -1,5 +1,5 @@
 # 도커 설정
 
-### grant all privileges on \*.* to 'root'@'%' identified by 'password';
-
-### chmod 755 /etc/mysql/conf.d/my.cnf
+### create user 계정ID@'%' identified by '계정비밀번호' ;
+### grant all privileges on DB이름.* to 계정ID@'%' with grant option;
+### flush privileges;
